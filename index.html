@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamagotchi game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@1,200&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./main.js" type="module"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Tamagotchi-game</h1>
+      <h3>
+        Write a name , select your desired type of Tamagotchi and press the
+        button in order to create a Tamagotchi. <br />
+        Make sure to play and feed your Tamagotchi or else it will die of
+        bordome or starvation when the levels reach 0.
+      </h3>
+      <form>
+        <input type="text" id="input" placeholder="Write a name..." />
+        <select id="select">
+          <option value="panda" id="panda">panda</option>
+          <option value="bunny" id="bunny">bunny</option>
+        </select>
+        <button id="createTamaBtn">Create tamagotchi!</button>
+      </form>
+    </div>
+
+    <div id="tamaContainer"></div>
+  </body>
+</html>
